@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">s
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portafolio  Medina Allan</title>
+    <link rel="stylesheet" href="Assets/css/styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            
+            <img src="Assets/img/linkedin-logo-linkedin-symbol-linkedin-icon-free-free-vector.jpg" alt=" imagen de linkedin" style="width: 50px; height: 50px;">
+            <a href="Formulario.html">Contacto</a>
+            <a href="https://github.com/Medicenlalan" target="_blank"><img src="Assets/img/25231.png" alt=" imagen de github" style="width: 50px; height: 50px;"></a>
+        </nav>
+    </header>
+
+    <main>
+       
+        <div class="slideshow-container">
+
+            <div class="mySlides fade">
+              <div class="numbertext">1 / 3</div>
+              <img src="Assets/img/R.png" style="width:100%">
+              <div class="container">
+                    <h4><b>Creacion de topologias de red</b></h4> 
+                    <p>Conocmientos con el lenguaje de python, me permiten crear aplicaciones web, 
+                    como tambien conocimientos en C#.</p> 
+                </div>
+            </div>
+            
+            <div class="mySlides fade">
+              <div class="numbertext">2 / 3</div>
+              <img src="Assets/img/inventario.png" style="width:100%">
+               <div class="container">
+                    <h4><b>Creacion de topologias de red</b></h4> 
+                    <p>Estuve estudiando por 4 años Ingenieria en Telecomunicaciones, por lo que tengo conocimientos
+                        en la creacion de topologias de red, tanto de red 
+                        de area local como de red de area extensa, como tambien en la instalacion y mantencion de los equipos 
+                        de red, como routers, switches, etc.</p> 
+              
+                </div>
+            </div>
+            
+            <div class="mySlides fade">
+              <div class="numbertext">3 / 3</div>
+              <img src="Assets/img/internet.jpg" style="width:100%">
+              <div class="container">
+                    <h4><b>Proyecto de inventario</b></h4> 
+                        <p>Uno de los proyectos que he realizado es un proyecto de inventario, el cual es una aplicación web
+                        que permite a los usuarios gestionar su inventario de manera eficiente y sencillo de implementar para apoyar a la empresa en 
+                        la gestión de sus productos.</p>
+                 </div>
+            </div>
+            
+            <a class="prev" onclick="plusSlides(-1)">❮</a>
+            <a class="next" onclick="plusSlides(1)">❯</a>
+            
+            </div>
+            <br>
+            
+            <div style="text-align:center">
+              <span class="dot" onclick="currentSlide(1)"></span> 
+              <span class="dot" onclick="currentSlide(2)"></span> 
+              <span class="dot" onclick="currentSlide(3)"></span> 
+            </div>
+            
+
+       
+      
+        </section>
+
+        <section id="aside" style="display: flex; gap: 20px;">
+            <div style="flex: 1;">
+                <h1>Mis Habilidades en el area de TI</h1>
+
+                <p>Como estudiante de el tecnico superior en informatica, he adquirido sólidos conocimientos  
+                    en lo que es HTML y CSS. Y al hacer uso de estas tecnologías
+                    me permiten crear sitios web atractivosy funcionales, 
+                    con un enfoque en la accesibilidad y la experiencia del usuario.
+                    Asi tambien creando interfaces que sean intuitivas y asi distinguiendome en proyectos
+                    tanto académicos y como tambien personales.</p>
+
+                <p>Con mis conocimientoss y habilidades con pyton y tambien C# ayudan en un desarrollo web
+                    y asi permitiendome automatizar tareas y desarrollar scripts eficientes.
+                     He utilizado Python para crear aplicaciones web , lo que me ha proporcionado una 
+                    comprensión más profunda de la programación orientada a objetos y el desarrollo ágil.</p>
+            </div>
+
+            <div style="flex: 1;">
+                <aside>
+                    <h2> Mis Habilidades blandas </h2>
+                    <p>Como mis habilidades blandas, puedo decir que tengo una gran capacidad de adaptacion, 
+                        me gusta aprender cosas nuevas y me gusta trabajar en equipo, me gusta ayudar a los demas
+                        ya que he trabajado en equipos variados anteriormente, aparte de eso tambien soy una persona 
+                        bastante energetica y me gusta estar constantemente haciendo algo para mejorar.</p>
+                </aside>
+            </div>
+        </section>
+
+        <section>
+            <div style="text-align:center">
+                <h2>¿Quieres contactarme?</h2>
+                <p>Haz clic en el botón para ir al formulario de contacto</p>
+                <a href="Formulario.html" class="btn" style="display: inline-block; padding: 10px 20px; background-color: #3f154e; color: white; text-decoration: none; border-radius: 5px; margin-top: 20px;">Ir a Contacto</a>
+            </div>
+        </section> 
+    </main>
+   
+
+    <footer>
+        <p>&copy; 2025 Portafolio de Allan Medina. Todos los derechos reservados.</p>
+    </footer>
+    <!-- <script src="Assets/Js/scripts.js">  </script> --> 
+     <script>
+
+        let slideIndex = 1;
+        showSlides(slideIndex);
+
+        function plusSlides(n) {
+        showSlides(slideIndex += n);
+        }
+
+        function currentSlide(n) {
+        showSlides(slideIndex = n);
+        }
+
+        function showSlides(n) {
+        let i;
+        let slides = document.getElementsByClassName("mySlides");
+        let dots = document.getElementsByClassName("dot");
+        if (n > slides.length) {slideIndex = 1}    
+        if (n < 1) {slideIndex = slides.length}
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";  
+        }
+        for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex-1].style.display = "block";  
+        dots[slideIndex-1].className += " active";
+        }
+
+     </script> 
+</body>
+</html>	
+
